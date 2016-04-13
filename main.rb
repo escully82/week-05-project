@@ -12,7 +12,8 @@ get "/" do
   erb :home
 end
 
+binding.pry
+
 get "/pry" do
-  binding.pry
   redirect to("/")
 end
